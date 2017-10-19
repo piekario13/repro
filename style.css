@@ -1,0 +1,408 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Anton|Cabin");
+.rgba, .gallery .row .layer, .staff .team .layer {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .25s; }
+
+.picture-text, .row .col-8 .tittle, .row .row p {
+  color: #FFF;
+  font-family: "Cabin", sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* GRID */
+.row::after {
+  content: "";
+  clear: both;
+  display: block; }
+
+[class*="col-"] {
+  min-height: 1px;
+  float: left;
+  padding: 15px;
+  box-sizing: border-box; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  .col-m-1 {
+    width: 8.33%; }
+
+  .col-m-2 {
+    width: 16.66%; }
+
+  .col-m-3 {
+    width: 25%; }
+
+  .col-m-4 {
+    width: 33.33%; }
+
+  .col-m-5 {
+    width: 41.66%; }
+
+  .col-m-6 {
+    width: 50%; }
+
+  .col-m-7 {
+    width: 58.33%; }
+
+  .col-m-8 {
+    width: 66.66%; }
+
+  .col-m-9 {
+    width: 75%; }
+
+  .col-m-10 {
+    width: 83.33%; }
+
+  .col-m-11 {
+    width: 91.66%; }
+
+  .col-m-12 {
+    width: 100%; } }
+/* HEADER */
+header {
+  height: 50px;
+  background-color: #333; }
+
+.logo {
+  width: 200px;
+  margin: 5px; }
+
+ul {
+  list-style-type: none;
+  float: right; }
+
+li {
+  display: inline-block; }
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  font-family: "Indie Flower", cursive;
+  font-size: 20px;
+  padding: 0 20px; }
+  a:hover {
+    color: yellow; }
+
+/* JUMBOTRON*/
+.hero {
+  background-image: url("https://static.pexels.com/photos/398549/pexels-photo-398549.jpeg");
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  text-align: right; }
+
+h1 {
+  font-size: 50px;
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.3);
+  width: 630px;
+  display: inline-block;
+  margin-top: 220px;
+  padding: 20px;
+  font-family: "Cabin", sans-serif;
+  max-height: 800px; }
+
+span {
+  font-weight: normal;
+  text-transform: uppercase; }
+
+/* ICON */
+.icons .col-4 .fa {
+  font-size: 50px;
+  margin-top: 50px; }
+.icons .col-4 .fa-bar-chart {
+  color: #00c7e8; }
+.icons .col-4 p {
+  font-size: 15px;
+  color: #000;
+  font-family: "Cabin", sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 50px; }
+.icons .col-4 h5 {
+  font-family: "Cabin", sans-serif;
+  margin-top: 10px;
+  font-size: 20px; }
+.icons .col-4 .lorem {
+  color: #00c7e8; }
+
+/* GALLERY */
+.gallery .row .col-12 {
+  text-align: center;
+  margin-bottom: 20px; }
+.gallery .row .featured {
+  font-family: "Indie Flower", cursive;
+  font-size: 30px;
+  margin-top: 60px; }
+.gallery .row .ipsum {
+  font-family: "Cabin", sans-serif;
+  margin-top: 10px;
+  color: #000;
+  font-size: 16px;
+  text-align: center; }
+.gallery .row [class*="col-"] {
+  padding: 0;
+  position: relative;
+  overflow: hidden; }
+.gallery .row .layer:hover {
+  opacity: 1;
+  cursor: pointer; }
+.gallery .row img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  object-fit: cover; }
+.gallery .row .fa {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #FFF;
+  font-size: 25px; }
+
+/*STAFF*/
+.staff .team [class*="col-"] {
+  text-align: center;
+  position: relative;
+  margin-top: 60px; }
+.staff .team .col-3 {
+  width: 25%;
+  float: left;
+  font-family: "Cabin", sans-serif; }
+.staff .team .outer_img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  position: relative; }
+.staff .team .layer {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  left: 0; }
+  .staff .team .layer:hover {
+    opacity: 1;
+    cursor: pointer; }
+.staff .team img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+.staff .team h3 {
+  color: #FFF;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  position: relative;
+  font-size: 30px; }
+.staff .team .name {
+  margin-top: 20px; }
+
+/*PICTURE*/
+.picture {
+  background-image: url("https://static.pexels.com/photos/398549/pexels-photo-398549.jpeg");
+  margin-top: 70px; }
+
+.row .col-4 {
+  padding: 15px 15px 0 15px; }
+.row img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  object-fit: cover;
+  display: block; }
+.row .col-8 .tittle {
+  font-size: 30px; }
+.row .row p {
+  font-size: 16px; }
+.row .row [class*="text"] {
+  text-align: left; }
+
+/* NUMBERS */
+.numbers .num {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin-top: 30px; }
+.numbers p {
+  font-family: "Cabin", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #00c7e8;
+  text-align: center;
+  margin-bottom: 40px; }
+
+/* FOOTER */
+.foot {
+  background-color: #333;
+  height: 150px; }
+
+.col-4 h3 {
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 10px; }
+.col-4 p {
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  font-size: 10px;
+  text-align: left; }
+
+.touch .col-4 .col-12 {
+  padding: 0; }
+.touch .col-4 [class*="col-"] {
+  padding: 0;
+  text-align: left;
+  color: #FFF; }
+.touch .col-4 p {
+  font-family: "Cabin", sans-serif;
+  font-size: 12px; }
+
+.col-4 .icon {
+  text-align: left;
+  margin: 10px 0; }
+.col-4 [class*="icon-btn"] {
+  text-align: center;
+  margin: 10px 0;
+  background-color: #00c7e8;
+  border: none; }
+.col-4 .icon-btn .fa {
+  width: 30px;
+  height: 30px;
+  color: #FFF;
+  font-size: 19px;
+  line-height: 28px; }
+
+.copyright .col-12 {
+  background-color: #000;
+  position: absolute; }
+.copyright h5 {
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  text-align: center;
+  text-transform: uppercase; }
+
+@media (max-width: 768px) {
+  header {
+    height: 360px;
+    background-color: #333; }
+
+  ul {
+    list-style-type: none;
+    float: none;
+    display: block; }
+
+  li {
+    display: block; }
+
+  a {
+    color: #FFF;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    padding: 0 20px; }
+
+  /* JUMBOTRON*/
+  .hero {
+    background-image: url("https://static.pexels.com/photos/398549/pexels-photo-398549.jpeg");
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    text-align: right; }
+
+  h1 {
+    font-size: 30px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.3);
+    width: 330px;
+    display: inline-block;
+    margin-top: 220px;
+    padding: 20px;
+    font-family: "Cabin", sans-serif;
+    max-height: 800px; }
+
+  span {
+    font-weight: normal;
+    text-transform: uppercase; }
+
+  /* ICON */
+  .icons .col-4 .fa {
+    margin-top: 10px; }
+
+  /*STAFF*/
+  .staff .team [class*="col-"] {
+    margin-top: 30px; }
+  .staff .team .col-3 {
+    width: 50%; }
+
+  /* FOOTER */
+  .foot {
+    height: 360px; } }
